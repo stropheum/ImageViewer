@@ -48,7 +48,7 @@ public class ActivityPhotoSelection extends AppCompatActivity
 
     // Http request components
     private OkHttpClient httpClient = new OkHttpClient();
-    private HashMap<API, String> mClientID = new HashMap<>();
+    private HashMap<String, String> mClientID = new HashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -56,7 +56,7 @@ public class ActivityPhotoSelection extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_photo_selection);
 
-        mClientID.put(API.Imgur, "7dfeb2b5004ba98");
+        mClientID.put("Imgur", "7dfeb2b5004ba98");
 
         InitializeListComponents();
         PopulatePhotoList();
